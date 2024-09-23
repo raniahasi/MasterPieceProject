@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>WeCart</title>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+		<link rel="stylesheet" href="homepage.css">
+		<!--===============================================================================================-->
+		<link rel="icon" type="image/png" href="images/icons/favicon.png"/>
+		<!--===============================================================================================-->
+		<link rel="stylesheet" type="text/css" href="vendor/bootstrap/css/bootstrap.min.css">
+		<!--===============================================================================================-->
+		<link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+		<!--===============================================================================================-->
+		<link rel="stylesheet" type="text/css" href="fonts/iconic/css/material-design-iconic-font.min.css">
+		<!--===============================================================================================-->
+		<link rel="stylesheet" type="text/css" href="fonts/linearicons-v1.0.0/icon-font.min.css">
+		<!--===============================================================================================-->
+		<link rel="stylesheet" type="text/css" href="vendor/animate/animate.css">
+		<!--===============================================================================================-->
+		<link rel="stylesheet" type="text/css" href="vendor/css-hamburgers/hamburgers.min.css">
+		<!--===============================================================================================-->
+		<link rel="stylesheet" type="text/css" href="vendor/animsition/css/animsition.min.css">
+		<!--===============================================================================================-->
+		<link rel="stylesheet" type="text/css" href="vendor/select2/select2.min.css">
+		<!--===============================================================================================-->
+		<link rel="stylesheet" type="text/css" href="vendor/daterangepicker/daterangepicker.css">
+		<!--===============================================================================================-->
+		<link rel="stylesheet" type="text/css" href="vendor/slick/slick.css">
+		<!--===============================================================================================-->
+		<link rel="stylesheet" type="text/css" href="vendor/MagnificPopup/magnific-popup.css">
+		<!--===============================================================================================-->
+		<link rel="stylesheet" type="text/css" href="vendor/perfect-scrollbar/perfect-scrollbar.css">
+		<!--===============================================================================================-->
+		<link rel="stylesheet" type="text/css" href="css/util.css">
+		<link rel="stylesheet" type="text/css" href="css/main.css">
+		<!--===============================================================================================-->
+		<!-- Google font -->
+			<link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,700" rel="stylesheet">
+	
+			<!-- Bootstrap -->
+			<link type="text/css" rel="stylesheet" href="css/bootstrap.min.css"/>
+	
+			<!-- Slick -->
+			<link type="text/css" rel="stylesheet" href="css/slick.css"/>
+			<link type="text/css" rel="stylesheet" href="css/slick-theme.css"/>
+	
+			<!-- nouislider -->
+			<link type="text/css" rel="stylesheet" href="css/nouislider.min.css"/>
+	
+			<!-- Font Awesome Icon -->
+			<link rel="stylesheet" href="css/font-awesome.min.css">
+	
+			<!-- Custom stlylesheet -->
+			<link type="text/css" rel="stylesheet" href="css/style.css"/>
+		<style>
+			body {
+				font-family: Arial, sans-serif;
+				width:100%;
+				margin:0;
+				padding: 0;
+			}
+			
+			header {
+				background-color: #383838;
+			}
+	
+			header .contact-info span {
+				margin-right: 10px;
+				color: white;
+			}
+	
+			header .contact-info i {
+				margin-right: 5px;
+			}
+	
+			header input[type="search"] {
+				width: 100%;
+				max-width: 400px;
+				margin: 0 auto;
+			}
+	
+			.navbar-nav .nav-item .nav-link {
+				padding: 5px 20px;
+			}
+	
+			.main .categories .category img {
+				border-radius: 10px;
+			}
+	
+			footer {
+				background-color: #222; /* Set footer background color */
+				color: white; /* Set footer text color to white for contrast */
+			}
+			.bg-dark {    background-color: #222 !important;}
+	
+			footer .payment-options img {
+				margin: 5px;
+				width: 50px; /* Set a uniform width for all images */
+				height: 50px; /* Set a uniform height for all images */
+				object-fit: contain; /* Ensure the images fit within the specified dimensions without stretching */
+			}
+	
+			footer .footer-links {
+				list-style-type: none;
+				padding: 0;
+				margin-top: 20px;
+			}
+	
+			footer .footer-links li {
+				display: inline;
+				margin: 0 10px;
+			}
+	
+			footer .footer-links li a {
+				text-decoration: none;
+				color: white; /* Ensure the footer link text color is white */
+			}
+	
+			.col-md-9 {
+				font-size: smaller;
+			}
+	
+			#navbarNav {
+				font-size: smaller;
+				
+			}
+	
+			.cart {
+				width: 40px;
+				height: 40px;
+			}
+	
+			.category-item {
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+			}
+	
+			.category-item img {
+				width: 60%;
+				height: 195px; /* Set a uniform height for all images */
+				object-fit: cover; /* Make sure images cover the area without stretching */
+			}
+	
+			.category-item p {
+				margin-top: 10px;
+				font-weight: bold;
+				text-align: center;
+				font-size: small;
+				color: #545454; /* Set the text color */
+			}
+	
+			.mb-5 {
+				font-size: 15px;
+				color: #323131de;
+				display: flex;
+				margin-top: -80px;
+				justify-content: center;
+				font-family:Poppins-Medium;
+				/* font-weight: 600; */
+			}
+	
+			.links { color:#383838;}
+	
+			footer .footer-links li a {
+				text-decoration: none;
+				color: white; 
+			}
+	
+		   
+			.main-content {
+				margin-top: 150px; 
+				}
+	
+	
+	.wrap-icon-header {
+		margin-top: -130px; Adjust this value to move icons up
+	}
+	
+	
+	.wrap-icon-header .icon-header-item {
+		margin-left: 15px; 
+	}
+	
+	
+	.header-logo {
+		height: auto; /* Ensures the height adjusts proportionally */
+		width: 100%; /* Ensures the width adjusts to its container */
+		max-width: 180px; /* Sets a maximum width to prevent it from being too large */
+	}
+	
+	#header {
+		display: flex;
+		justify-content: space-between; /* Adjusted to space out the elements evenly */
+		align-items: center; /* Vertically centers the elements */
+		
+		padding-bottom: 0.5rem; /* Reduced bottom padding */
+		background-color: #222222; /* Keeps the background color as is */
+	}
+	
+	.icon-header-item i {
+		color: white; /* Change icon color to white */
+	}
+	
+	.icon-header-item {
+		color: white; /* Ensure the hover state is also white */
+	}
+	
+	.icon-header-item:hover {
+		color: white; /* Ensure the hover state is also white */
+	}
+	
+			
+		</style>
+	</head>
+	<body>
+	
+		<header class="bg-dark text-white py-2">
+			<div class="container">
+				<div class="row align-items-center">
+					<div class="col-md-9">
+						
+						<i class="fas fa-envelope"></i> CONTACT
+						<i class="far fa-clock ml-3"></i> 10:00 - 22:00
+						<i class="fas fa-phone-alt ml-3"></i> PHONE: 044397210 / WHATSAPP: 0507502120
+					</div>
+					<div class="col-md-3 text-right">
+						<a href="#" class="text-white mr-2"><i class="fab fa-facebook"></i></a>
+						<a href="#" class="text-white mr-2"><i class="fab fa-whatsapp"></i></a>
+						<a href="#" class="text-white mr-2"><i class="fab fa-instagram"></i></a>
+						
+					</div>
+					
+				</div>
+				
+			</div>
+		   
+		</header>
+	
+	
+
+	<!-- Content page -->
+	<section class="bg0 p-t-104 p-b-116">
+		<div class="container">
+			<div class="flex-w flex-tr">
+				<div class="size-210 bor10 p-lr-70 p-t-55 p-b-70 p-lr-15-lg w-full-md">
+					<form>
+						<h4 class="mtext-105 cl2 txt-center p-b-30">
+							Send Us A Message
+						</h4>
+
+						<div class="bor8 m-b-20 how-pos4-parent">
+							<input class="stext-111 cl2 plh3 size-116 p-l-62 p-r-30" type="text" name="email" placeholder="Your Email Address">
+							<img class="how-pos4 pointer-none" src="images/icons/icon-email.png" alt="ICON">
+						</div>
+
+						<div class="bor8 m-b-30">
+							<textarea class="stext-111 cl2 plh3 size-120 p-lr-28 p-tb-25" name="msg" placeholder="How Can We Help?"></textarea>
+						</div>
+
+						<button class="flex-c-m stext-101 cl0 size-121 bg3 bor1 hov-btn3 p-lr-15 trans-04 pointer">
+							Submit
+						</button>
+					</form>
+				</div>
+
+				<div class="size-210 bor10 flex-w flex-col-m p-lr-93 p-tb-30 p-lr-15-lg w-full-md">
+					<div class="flex-w w-full p-b-42">
+						<span class="fs-18 cl5 txt-center size-211">
+							<span class="lnr lnr-map-marker"></span>
+						</span>
+
+						<div class="size-212 p-t-2">
+							<span class="mtext-110 cl2">
+								Address
+							</span>
+
+							<p class="stext-115 cl6 size-213 p-t-18">
+								Coza Store Center 8th floor, 379 Hudson St, New York, NY 10018 US
+							</p>
+						</div>
+					</div>
+
+					<div class="flex-w w-full p-b-42">
+						<span class="fs-18 cl5 txt-center size-211">
+							<span class="lnr lnr-phone-handset"></span>
+						</span>
+
+						<div class="size-212 p-t-2">
+							<span class="mtext-110 cl2">
+								Lets Talk
+							</span>
+
+							<p class="stext-115 cl1 size-213 p-t-18">
+								+1 800 1236879
+							</p>
+						</div>
+					</div>
+
+					<div class="flex-w w-full">
+						<span class="fs-18 cl5 txt-center size-211">
+							<span class="lnr lnr-envelope"></span>
+						</span>
+
+						<div class="size-212 p-t-2">
+							<span class="mtext-110 cl2">
+								Sale Support
+							</span>
+
+							<p class="stext-115 cl1 size-213 p-t-18">
+								contact@example.com
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>	
+	
+	
+	<!-- Map -->
+	<div class="map">
+		<div class="size-303" id="google_map" data-map-x="40.691446" data-map-y="-73.886787" data-pin="images/icons/pin.png" data-scrollwhell="0" data-draggable="1" data-zoom="11"></div>
+	</div>
+
+
+
+			<!-- NEWSLETTER -->
+			<div id="newsletter" class="section">
+				<!-- container -->
+				<div class="container">
+					<!-- row -->
+					<div class="row">
+						<div class="col-md-12">
+							<div class="newsletter">
+								
+								<ul class="newsletter-follow">
+									<li>
+										<a href="#"><i class="fa fa-facebook"></i></a>
+									</li>
+									<li>
+										<a href="#"><i class="fa fa-twitter"></i></a>
+									</li>
+									<li>
+										<a href="#"><i class="fa fa-instagram"></i></a>
+									</li>
+									<li>
+										<a href="#"><i class="fa fa-pinterest"></i></a>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<!-- /row -->
+				</div>
+				<!-- /container -->
+			</div>
+			<!-- /NEWSLETTER -->
+		<!-- FOOTER -->
+		<footer class="bg-dark text-white py-4">
+			<div class="container text-center">
+				<div class="row">
+					<div class="col payment-options">
+						<img src="images/wecart.png" alt="WeCart" class="img-fluid">
+						<img src="images/apple_pay.png" alt="Apple Pay" class="img-fluid">
+						<img src="images/zelle.png" alt="Zelle" class="img-fluid">
+						<img src="images/cash.png" alt="Cash" class="img-fluid">
+						<img src="images/mastercard.png" alt="MasterCard" class="img-fluid">
+						<img src="images/visa.png" alt="Visa" class="img-fluid">
+						<img src="images/PayPal.png" alt="PayPal" class="img-fluid">
+					</div>
+				</div>
+				<ul class="footer-links list-inline mt-3">
+					<li class="list-inline-item"><a href="index.html">Home Page</a></li>
+					<li class="list-inline-item"><a href="about.html">About Us</a></li>
+					<li class="list-inline-item"><a href="#">My Account</a></li>
+					<li class="list-inline-item"><a href="#">Privacy Policy</a></li>
+					<li class="list-inline-item"><a href="#">Delivery</a></li>
+					<li class="list-inline-item"><a href="#">Refund</a></li>
+					<li class="list-inline-item"><a href="#">Terms & Conditions</a></li>
+				</ul>
+			</div>
+		</footer>
+		<!-- /FOOTER -->
+
+	<!-- Back to top -->
+	<div class="btn-back-to-top" id="myBtn">
+		<span class="symbol-btn-back-to-top">
+			<i class="zmdi zmdi-chevron-up"></i>
+		</span>
+	</div>
+
+<!--===============================================================================================-->	
+	<script src="vendor/jquery/jquery-3.2.1.min.js"></script>
+<!--===============================================================================================-->
+	<script src="vendor/animsition/js/animsition.min.js"></script>
+<!--===============================================================================================-->
+	<script src="vendor/bootstrap/js/popper.js"></script>
+	<script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+<!--===============================================================================================-->
+	<script src="vendor/select2/select2.min.js"></script>
+	<script>
+		$(".js-select2").each(function(){
+			$(this).select2({
+				minimumResultsForSearch: 20,
+				dropdownParent: $(this).next('.dropDownSelect2')
+			});
+		})
+	</script>
+<!--===============================================================================================-->
+	<script src="vendor/MagnificPopup/jquery.magnific-popup.min.js"></script>
+<!--===============================================================================================-->
+	<script src="vendor/perfect-scrollbar/perfect-scrollbar.min.js"></script>
+	<script>
+		$('.js-pscroll').each(function(){
+			$(this).css('position','relative');
+			$(this).css('overflow','hidden');
+			var ps = new PerfectScrollbar(this, {
+				wheelSpeed: 1,
+				scrollingThreshold: 1000,
+				wheelPropagation: false,
+			});
+
+			$(window).on('resize', function(){
+				ps.update();
+			})
+		});
+	</script>
+<!--===============================================================================================-->
+	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAKFWBqlKAGCeS1rMVoaNlwyayu0e0YRes"></script>
+	<script src="js/map-custom.js"></script>
+<!--===============================================================================================-->
+	<script src="js/main.js"></script>
+
+</body>
+</html>
